@@ -1,0 +1,49 @@
+.sign-up-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sign-up-form{
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  label{
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 5px;
+  }
+  
+  input{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+  
+  }
+  button {
+    margin-top: 10px;
+    width:100%;
+    padding:10px;
+    background-color: teal;
+    color: #fff;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover{
+    background-color: rgb(5, 116, 116);
+  }
+  
+  span {
+    display: block; 
+    font-size: 12px;
+    color: red;
+    margin-bottom: 8px; 
+  }

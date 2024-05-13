@@ -1,0 +1,158 @@
+.dashboard-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 99vh;
+    border: 1px solid black;
+}
+
+.dashboard-form{
+    position: fixed;
+    width: 1000px;
+    padding: 0;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border: 1px solid black;
+  }
+
+h1{
+    text-align: center;
+    padding: 10px;
+}
+
+.navbar{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height:90vh;
+    background-color: teal;
+    float: left;
+    width: 25%;
+}
+.content{
+    float:right;
+    width: 60%;
+    padding-top: 45px;
+    padding-right: 80px;
+}
+ul,ol{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-top: 1px solid #ccc;
+}
+li{
+    padding: 15px;
+    margin: 0;
+    color: white;
+    border-bottom: 1px solid #ccc;
+}
+li:not(.active):hover {
+    font-size: 18px;
+    background-color: rgb(5, 100, 100);
+  }
+ol li{
+    color: black;
+    font-size: 18px;
+}
+ol li:hover{
+    font-size: 18px;
+    color: white;
+    background-color: rgb(5, 100, 100);
+}
+
+.active {
+    font-size: 18px;
+    background-color: rgb(5, 100, 100);
+    color: white;
+ }
+
+ 
+  select{
+    height: 20px;
+    width: 90px;
+    margin-right: 1rem;
+  }
+
+.link {
+    text-decoration: none; /* Remove underline */
+    
+  }
+
+  .enrollment-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enrollment-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: 500px; /* Adjust width as needed */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table td {
+    text-align: center;
+}
+
+.custom-table th {
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:nth-child(even) { 
+    background-color: #f2f2f2;
+}
+
+.custom-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
